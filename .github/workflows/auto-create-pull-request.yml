@@ -16,4 +16,4 @@ jobs:
           destination_branch: "main"
           pr_title: "mainマージ"
           pr_body: ""
-          pr_reviewer: "nkc-asia/developer"
+          pr_reviewer: "koyamann/mp-programmers"
