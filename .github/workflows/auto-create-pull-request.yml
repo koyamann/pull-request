@@ -14,5 +14,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: "develop"
           destination_branch: "master"
-          pr_title: "【mainマージ】${{ github.ref }}"
+          pr_title: "【mainマージ】${{ github.event.pull_request.title }}"
           pr_body: ""
