@@ -12,8 +12,8 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: 'develop'
-          destination_branch: "main"
-          pr_title: "mainマージ"
+          source_branch: "develop"
+          destination_branch: "master"
+          pr_title: "【mainマージ】${{ github.event.head_commit.message }}"
           pr_body: ""
-          pr_reviewer: "nkc-asia/developer"
+          pr_reviewer: ${{ secrets.MAIN_REVIEWERS }}
